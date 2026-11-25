@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# 本地知识库数据（绝不入库）
+data/
+storage/
+*.sqlite
+*.db
+corpus/
+golden/
+*.log
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
