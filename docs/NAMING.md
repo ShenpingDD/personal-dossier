@@ -8,15 +8,16 @@
 
 | 项 | 值 | 说明 |
 |---|---|---|
-| 中文名 | **汲古** | 对外口头称呼；品牌层 |
+| 中文简称 | **汲古** | 对外口头称呼；品牌层 |
+| 中文全称 | 汲古 · 个人文档知识库 | 只在首次出现、文档标题、对外介绍时用 |
 | 英文名 | **Dossier** | 与中文名同源不同义：汲古说动作，Dossier 说容器 |
-| 正式全称 | 汲古 · 个人文档知识库 | 只在首次出现、文档标题、对外介绍时用 |
+| 英文全称 | Dossier — a personal document knowledge base | 即 README 首屏副标，不另造 |
 | GitHub 仓库 | `ShenpingDD/personal-dossier` | 全小写连字符；`personal-` 是三条硬约束的可见标记 |
 | 副标（中文） | 售前与项目经理的个人文档知识库 | 一句话说清给谁、是什么 |
 | PyPI 包名 | `personal-dossier` | 2026-11-25 核查未注册 |
 | Python 模块 | `personal_dossier` | 与包名一致，避免与已有包重名 |
 | CLI | `dossier` | 子命令：`parse` / `loc` / `eval` / `ask` |
-| 域名（备用） | jigu.cc / personal-dossier.com | 均未核查，需要时再占 |
+| 域名 / 账号（备用） | 裸 `jigu`（如 jigu.dev） | 拼音只在这里出现，绝不拼进 slug，否则与 `personal-dossier` 成双胞胎 |
 
 **一句话定位**：一个客户一卷，问出来每句带出处。
 
@@ -44,7 +45,8 @@ personal-dossier   =   personal（约束）+ dossier（英文品牌词干）
 |---|---|
 | 文档标题 / 首次出现 / 对外介绍 | 汲古 · 个人文档知识库 |
 | 第二次起 / 口头 / 群聊 | 汲古 |
-| 英文语境 / 代码仓库 | Dossier（仓库地址 `personal-dossier`） |
+| 英文语境 | Dossier — a personal document knowledge base |
+| 代码仓库 / 包名 | `personal-dossier`（不说 "jigu-personal-dossier"） |
 | 命令 | `dossier parse report.pdf` |
 | ❌ 不要写 | 「汲古知识库」（品类重复）、「Personal 汲古」（中英混写）、「个人卷宗」（旧名，已废弃） |
 

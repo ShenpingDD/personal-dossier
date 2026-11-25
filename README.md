@@ -1,8 +1,9 @@
 # 汲古 · 个人文档知识库
 
-> **汲古**（Dossier）—— 售前解决方案经理 / 项目经理的个人文档知识库：一个客户一卷，问出来每句带出处。
+> **汲古** —— 售前解决方案经理 / 项目经理的个人文档知识库：一个客户一卷，问出来每句带出处。
 
-*Jigu: a local-first personal document dossier for presales and project managers.*
+**Dossier** — a personal document knowledge base for presales and project managers.
+Local-first · every answer traceable to a page, a shape, or a row.
 
 写方案时最贵的三分钟，是「上次那个类似项目是怎么答的」——资料散在微信、邮箱和 D 盘十几个文件夹里，文件名还都叫「最终版 2」。
 汲古解决的就是这件事：**把客户给的文件和我方出的方案，按「卷」收进来，随时能问，答案指得回原件。**
@@ -120,7 +121,20 @@
 
 **汲古**，取自明末毛晋的藏书刻书楼「汲古阁」——「汲」是从井里打水，也是从旧卷里取用。
 
-售前最贵的能力不是写新方案，是**知道上次怎么写、并取得出来**。名字说的是这个动作：你的旧方案都还在，等着被汲上来。
-「卷宗」是它装东西的方式（英文 Dossier），「汲古」是它干的事。
+> 你的旧方案，都在这里等着被汲上来。
 
-命名决策记录见 [docs/NAMING.md](docs/NAMING.md)。
+售前最贵的能力不是写新方案，是**知道上次怎么写、并且取得出来**。名字说的是这个动作；`Dossier` 说的是它装东西的方式——一个客户一卷。
+
+| 层 | 定稿 | 用在哪 |
+|---|---|---|
+| 中文简称 | **汲古** | 口头、群聊、第二次提起 |
+| 中文全称 | **汲古 · 个人文档知识库** | 首次出现、文档标题、对外介绍 |
+| 英文名 | **Dossier** | 英文语境；一个词，与中文名同源不同义 |
+| 英文全称 | **Dossier — a personal document knowledge base** | 首屏副标，不另造 |
+| 仓库 / PyPI | `personal-dossier` | = personal（约束）+ Dossier（英文名） |
+| 命令 | `dossier` | `dossier parse report.pdf` |
+
+四个词各管一层：**汲古说动作，Dossier 说容器，personal 说代价，「个人文档知识库」说品类。**
+名字负责被记住，品类负责被搜到——所以品类不进名字。
+
+命名决策记录（含否掉的十几个候选、以及 `jigu` 在 PyPI 已被占的坑）见 [docs/NAMING.md](docs/NAMING.md)。
