@@ -1,6 +1,6 @@
 # 命名决策记录 · NAMING
 
-> 本文件记录「个人卷宗」这个名字是怎么定下来的、否掉了哪些、以及对外三处文案的定稿。改名前请先读完。
+> 本文件记录「汲古」这个名字是怎么定下来的、否掉了哪些、以及中英名如何对应。改名前请先读完。
 
 ---
 
@@ -8,15 +8,50 @@
 
 | 项 | 值 | 说明 |
 |---|---|---|
-| GitHub 仓库 | `ShenpingDD/personal-dossier` | 全小写、连字符，与 `scene-space-designer` 同风格 |
-| 中文名 | **个人卷宗** | 对外口头称呼 |
-| 英文品类 | Personal Document KB | 只用于副标与 description，不当名字 |
+| 中文名 | **汲古** | 对外口头称呼；品牌层 |
+| 英文名 | **Dossier** | 与中文名同源不同义：汲古说动作，Dossier 说容器 |
+| 正式全称 | 汲古 · 个人文档知识库 | 只在首次出现、文档标题、对外介绍时用 |
+| GitHub 仓库 | `ShenpingDD/personal-dossier` | 全小写连字符；`personal-` 是三条硬约束的可见标记 |
 | 副标（中文） | 售前与项目经理的个人文档知识库 | 一句话说清给谁、是什么 |
-| Python 包名 | `personal_dossier` | 待 PyPI 发布时确认仍可用 |
+| PyPI 包名 | `personal-dossier` | 2026-11-25 核查未注册 |
+| Python 模块 | `personal_dossier` | 与包名一致，避免与已有包重名 |
 | CLI | `dossier` | 子命令：`parse` / `loc` / `eval` / `ask` |
-| 域名（备用） | personal-dossier.com | 2026-11-25 核查无 DNS，需要时再占 |
+| 域名（备用） | jigu.cc / personal-dossier.com | 均未核查，需要时再占 |
 
 **一句话定位**：一个客户一卷，问出来每句带出处。
+
+### 中英名怎么对应
+
+不是翻译关系，是分工关系：
+
+```
+personal-dossier   =   personal（约束）+ dossier（英文品牌词干）
+                          │                    │
+                   三条硬约束            汲古的中文名
+                  不出本机/单人/长跑      （汲古：从旧卷里汲水）
+```
+
+- 「汲古」说的是**动作**：你的旧方案还在，等着被汲上来。
+- 「Dossier」说的是**容器**：一个客户一卷。
+- 「personal-」说的是**代价与边界**：砍掉协作、权限、云同步。
+- 「个人文档知识库」说的是**品类**：让搜索和第一眼归类有落点。
+
+同一个东西四个词，各管一层，互不替代。
+
+### 用法规范
+
+| 场合 | 写法 |
+|---|---|
+| 文档标题 / 首次出现 / 对外介绍 | 汲古 · 个人文档知识库 |
+| 第二次起 / 口头 / 群聊 | 汲古 |
+| 英文语境 / 代码仓库 | Dossier（仓库地址 `personal-dossier`） |
+| 命令 | `dossier parse report.pdf` |
+| ❌ 不要写 | 「汲古知识库」（品类重复）、「Personal 汲古」（中英混写）、「个人卷宗」（旧名，已废弃） |
+
+### 两个命名坑（已核查，2026-11-25）
+
+- **PyPI `jigu` 已被占**：是 Terra 区块链的 Python SDK（v0.1.4，`jigu.terra.money`），且 npm 上 `jigu` 也被占。所以中文名的拼音不能当包名，包名回归 `personal-dossier`。
+- **PyPI / npm `dossier` 也被占**：所以 `dossier` 只能做 CLI 命令名，不能做包名。包名与命令名分离是常见做法（如 `pillow` → `PIL`）。
 
 ---
 
@@ -28,7 +63,7 @@
 |---|---|---|---|
 | **品类层** | 这属于什么产品 | description / topics / README 第一句 | 个人文档知识库 · Personal Document KB |
 | **角色层** | 给谁用 | README 副标 | 售前解决方案经理 · 项目经理 |
-| **名字层** | 我叫它什么 | repo slug / 中文名 / CLI | 个人卷宗 · `personal-dossier` |
+| **名字层** | 我叫它什么 | repo slug / 中英名 / CLI | 汲古（Dossier）· `personal-dossier` |
 
 **规则：名字负责被记住，品类负责被搜到。名字里塞品类，两边都丢。**
 
@@ -93,7 +128,7 @@ evaluation
 ### 3. README 首屏（已写入 README.md，此处存要点）
 
 ```
-# 个人卷宗 · personal-dossier
+# 汲古 · 个人文档知识库
 > 售前解决方案经理 / 项目经理的个人文档知识库：一个客户一卷，问出来每句带出处。
 
 写方案时最贵的三分钟，是「上次那个类似项目是怎么答的」……
